@@ -1,5 +1,8 @@
 {
     "wishing-well": "0xf5ff69f4ac4a851730668b93fc408bc1c49ef4ce",
     "heroes": "0x5f753dcdf9b1ad9aabc1346614d1f4746fd6ce5c",
-    "sale-auctions": "0x13a65B9F8039E2c032Bc022171Dc05B30c3f2892"
+    "sale-auctions": "0x13a65B9F8039E2c032Bc022171Dc05B30c3f2892",
+    "quest-core": "0x5100bd31b822371108a0f63dcfb6594b9919eaf4",
+    "fishing-quest": "0xE259e8386d38467f0E7fFEdB69c3c9C935dfaeFc",
+    "foraging-quest": "0x3132c76acF2217646fB8391918D28a16bD8A8Ef4"
 }
