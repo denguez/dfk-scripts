@@ -7,7 +7,7 @@ const contract = Contract(ADDRESS, ABI)
 
 module.exports = {
     async getHero(heroId) {
-        return await contract.functions.getHero(heroId)[0]
+        return (await contract.functions.getHero(heroId))[0]
     },
     async isOnAQuest(heroId) {
         const res = await contract.functions.getHero(heroId)
