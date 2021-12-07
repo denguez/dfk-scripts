@@ -1,0 +1,9 @@
+{
+    "harmony-rpc": "https://api.harmony.one",
+    "max-tries": 3,
+    "address-zero": "0x0000000000000000000000000000000000000000",
+    "wishing-well": {
+        "wait-interval": 35
+    },
+    "dfk-api": "http://graph3.defikingdoms.com/subgraphs/name/defikingdoms/apiv5"
+}

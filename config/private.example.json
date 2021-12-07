@@ -1,0 +1,9 @@
+{
+    "address-wallet": "0x...",
+    "private-key": "...",
+    "heroes": [
+        "1",
+        "2",
+        "3"
+    ]
+}
