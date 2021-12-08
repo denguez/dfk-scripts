@@ -2,14 +2,14 @@ const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fet
 const GRAPH_URL = require('../config/global.json')['dfk-api']
 
 module.exports = {
-    async query(query) {
+    async query(query, variables) {
         try {
             const response = await fetch(GRAPH_URL, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
                 },
-                body: JSON.stringify({ query: query }),
+                body: JSON.stringify({ query, variables }),
             });
             const { data } = await response.json();
             return data
