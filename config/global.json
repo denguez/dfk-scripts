@@ -1,6 +1,7 @@
 {
     "harmony-rpc": "https://api.harmony.one",
     "max-tries": 3,
+    "retry-wait": 5,
     "address-zero": "0x0000000000000000000000000000000000000000",
     "wishing-well": {
         "wait-interval": 35

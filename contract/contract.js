@@ -30,7 +30,7 @@ module.exports = {
                     console.log(`❌ Tx failed: MAX_TRIES ${attempt}`, ex)
                 } else {
                     console.log("❌ Tx failed, retrying...", ex)
-                    await sleep(3)
+                    await sleep(config['retry-wait'])
                     await callFunctionRetry(attempt + 1, fn, ...args)
                 }
             }
