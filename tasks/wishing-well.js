@@ -24,7 +24,7 @@ module.exports = async (heroes) => {
                     await Sales.cancelAuction(heroId)
 
                     await WishingWell.startQuest(heroId, attemtps)
-                    heroesOnQuest.push({ id: heroId, auction: auction })
+                    heroesOnQuest.push({ id: heroId, price: auction.startingPrice.toString() })
                 } else {
                     await WishingWell.startQuest(heroId, attemtps)
                     heroesOnQuest.push({ id: heroId })
@@ -43,8 +43,8 @@ module.exports = async (heroes) => {
     for (let i = 0; i < heroesOnQuest.length; i++) {
         const hero = heroesOnQuest[i]
         await WishingWell.completeQuestRetry(hero.id)
-        if (hero.auction) {
-            await Sales.createPublicAuction(hero.id, hero.auction.startingPrice.toString())
+        if (hero.price) {
+            await Sales.createPublicAuction(hero.id, hero.price)
         }
     }
 }
